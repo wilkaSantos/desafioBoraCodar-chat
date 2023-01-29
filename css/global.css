@@ -1,0 +1,41 @@
+@import './index.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+
+    --bg-page: #3a3943;
+    --bg-chat: #1A1924;
+    --bg-status: #00B37E;
+    --bg-balloonOdd: #633BBC;
+    --bg-ballonEven: #07847E;
+    --bg-buttonSend:#633BBC;
+    --bg-textField: #282843;
+
+    --c-text: #ffffff;
+    --c-text-status: #00B37E;
+
+    --ff-chat: 'Roboto', sans-serif;
+
+}
+
+.page{
+    background: var(--bg-page);
+    width: 100%;
+    height: 100vh;
+    padding: 0 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+
+}

@@ -1,0 +1,139 @@
+
+.container-chat{
+    background: var(--bg-chat);
+    min-width: 33rem;
+    padding: 2.4rem 3.2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    color: var(--c-text);
+    font-family: var(--ff-chat);
+}
+
+.wrapped{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    /*border: 1px solid #fff;*/
+}
+
+
+/* = = = TOP = = = */
+    .container-top{
+        display: flex;
+        gap: 1.6rem;
+    }
+    .user{
+        width: 4.8rem;
+        height: 4.8rem;
+
+        border-radius: 50%;
+    }
+    .title{
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+    }
+
+    .dayText{
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+
+        margin-top: 2.6rem;
+    }
+    .container-status{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-top: .4rem;
+    }
+        .ico-status{
+            width: .8rem;
+            height: .8rem;
+            border-radius: 50%;
+
+            background: var(--bg-status);
+        }
+        .status{
+            color: var(--c-text-status);
+        }
+
+/* = = = MIDDLE = = = */
+
+.messageOdd{
+    align-items: flex-start;
+}
+
+.messageEven{
+    align-items: flex-end;
+}
+    .balloonMessage{
+        margin-top: 1rem;
+        padding: 1.4rem;
+        max-width: 15rem;
+    }
+    .odd{
+        background: var(--bg-balloonOdd);
+        border-radius: 0 1rem 1rem 1rem;
+    }
+    .even{
+        background: var(--bg-ballonEven);
+        border-radius: 1rem 1rem 0 1rem;
+    }
+
+/* = = = BOTTOM = = = */
+.button{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem;
+
+    padding-top: 2rem;
+}
+    #textField{ 
+        width: 85%;  
+        background: var(--bg-textField);
+        border-radius: 2rem;
+        border: none;
+        padding-left: 1rem;
+    }
+    .buttonSend{
+        width: 3.2rem;
+        height: 3.3rem;
+        border-radius: .7rem;
+        background: var(--bg-buttonSend);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+        .ico-send{
+            width: 2rem;
+            height: 2rem;
+        }
+
+/* = = = Version desktop = = = */
+
+@media(min-width: 760px){
+    .container-chat{
+        width: 63rem;
+    }
+    .balloonMessage{
+        max-width: 35rem;
+    }
+
+    .buttonSend{
+        width: 4.7rem;
+        border-radius: .9rem;
+    }
+    #textField{
+        width: 90%;
+    }
+}
